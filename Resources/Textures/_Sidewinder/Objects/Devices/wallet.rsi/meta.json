@@ -53,13 +53,13 @@
       "name": "pda-chaplain"
     },
     {
-      "name": "wallet-pharmacist"
+      "name": "wallet-chemist"
     },
     {
       "name": "pda-clear"
     },
     {
-      "name": "pda-clown"
+      "name": "wallet-clown"
     },
     {
       "name": "pda-cmo"
@@ -83,7 +83,7 @@
       "name": "pda-hos"
     },
     {
-      "name": "pda-hydro"
+      "name": "wallet-farmer"
     },
     {
       "name": "pda-janitor"

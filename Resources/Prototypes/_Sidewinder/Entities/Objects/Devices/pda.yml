@@ -104,15 +104,15 @@
 
 - type: entity
   parent: BaseWallet
-  id: WalletPharmacist
-  name: pharmacist wallet
+  id: WalletChemist
+  name: chemist wallet
   description: A white leather wallet, a patch portraying three vials is stitched onto the front of it.
   components:
   - type: Pda
     id: ChemistIDCard
-    state: wallet-pharmacist
+    state: wallet-chemist
   - type: Icon
-    state: wallet-pharmacist
+    state: wallet-chemist
 
 - type: entity
   parent: BaseWallet
@@ -149,3 +149,55 @@
     state: wallet-mail
   - type: Icon
     state: wallet-mail
+
+- type: entity
+  parent: BaseWallet
+  id: WalletFarmer
+  name: farmer wallet
+  description: A brown wallet, covered in dirt. Has an earthy scent.
+  components:
+  - type: Pda
+    id: BotanistIDCard
+    state: wallet-farmer
+  - type: Icon
+    state: wallet-farmer
+
+- type: entity
+  parent: BaseWallet
+  id: WalletClown
+  name: clown wallet
+  description: A once brown wallet, dipped in some unknown pink substance. Its oddly slippery.
+  components:
+  - type: Pda
+    id: ClownIDCard
+    state: wallet-clown
+    penSlot:
+      startingItem: CrayonOrange # no pink crayon?!?
+      # ^ Still unacceptable.
+      # ^ I would have to concur.
+      ejectSound: /Audio/Items/bikehorn.ogg
+      priority: -1
+  - type: Icon
+    state: wallet-clown
+  - type: Slippery
+  - type: StepTrigger
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        hard: false
+        layer:
+          - SlipLayer
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        density: 5
+        mask:
+        - ItemMask
