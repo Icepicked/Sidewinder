@@ -80,27 +80,27 @@
 
 - type: entity
   parent: BaseWallet
-  id: WalletSurgeon
-  name: surgeon wallet
+  id: WalletDoctor
+  name: doctor wallet
   description: A once sterile white wallet, now stained with dried blood and dirt.
   components:
   - type: Pda
     id: MedicalIDCard
-    state: wallet-surgeon
+    state: wallet-doctor
   - type: Icon
-    state: wallet-surgeon
+    state: wallet-doctor
 
 - type: entity
   parent: BaseWallet
-  id: WalletSurgeonsHand
-  name: surgeon's hand wallet
+  id: WalletJrDoctor
+  name: junior doctor wallet
   description: A relatively clean wallet, only having small specs of dirt and dried blood.
   components:
   - type: Pda
     id: MedicalInternIDCard
-    state: wallet-surgeonshand
+    state: wallet-jrdoctor
   - type: Icon
-    state: wallet-surgeonshand
+    state: wallet-jrdoctor
 
 - type: entity
   parent: BaseWallet
@@ -116,39 +116,39 @@
 
 - type: entity
   parent: BaseWallet
-  id: WalletShophand
-  name: shophand wallet
-  description: A beige wallet. A patch resembling a envelope is stiched onto the face of it.
+  id: WalletCargoHauler
+  name: cargo hauler wallet
+  description: A beige wallet. A patch resembling train tracks is stitched onto the front.
   components:
   - type: Pda
     id: CargoIDCard
-    state: wallet-shophand
+    state: wallet-cargohauler
   - type: Icon
-    state: wallet-shophand
+    state: wallet-cargohauler
 
 - type: entity
   parent: BaseWallet
-  id: WalletDepthsMiner
-  name: depth miner's wallet
+  id: WalletShaftMiner
+  name: shaft miner wallet
   description: A beige wallet. Covered in dirt and iron residue.
   components:
   - type: Pda
     id: SalvageIDCard
-    state: wallet-depthsminer
+    state: wallet-shaftminer
   - type: Icon
-    state: wallet-depthsminer
+    state: wallet-shaftminer
 
 - type: entity
   parent: BaseWallet
-  id: WalletMailDeliverer 
-  name: mail deliverer's wallet
+  id: WalletCourier
+  name: courier wallet
   description: A beige wallet. A patch resembling a envelope is stiched onto the face of it.
   components:
   - type: Pda
     id: CargoIDCard #TODO: Change ID fron CargoIDCard to MailIDCard (make it) 
-    state: wallet-mail
+    state: wallet-courier
   - type: Icon
-    state: wallet-mail
+    state: wallet-courier
 
 - type: entity
   parent: BaseWallet
@@ -201,3 +201,57 @@
         density: 5
         mask:
         - ItemMask
+
+- type: entity
+  parent: BaseWallet
+  id: WalletCook
+  name: cook wallet
+  description: A brown wallet, covered in dried animal blood. A path with a cleaver on it is stiched to the front.
+  components:
+  - type: Pda
+    id: ChefIDCard
+    state: wallet-cook
+  - type: Icon
+    state: wallet-cook
+
+- type: entity
+  name: chaplin wallet
+  parent: BaseWallet
+  id: WalletChaplin
+  description: A holy brown wallet, a cross is stitched to the front.
+  components:
+  - type: Pda
+    id: ChaplainIDCard
+    state: wallet-chaplin
+  - type: Icon
+    state: wallet-chaplin
+
+- type: entity
+  parent: BaseWallet
+  id: WalletReporter
+  name: reporter wallet
+  description: A brown wallet, a patch with a quill on it is stiched to the front. Smells like old ink.
+  components:
+  - type: Pda
+    id: ReporterIDCard
+    state: wallet-reporter
+    penSlot:
+      startingItem: LuxuryPen #Replace with Quill
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Icon
+    state: wallet-reporter
+
+- type: entity
+  parent: BaseWallet
+  id: WalletRescuer
+  name: rescuer wallet
+  description: A sterile white wallet, small specs of dirt cover the lower half of it.
+  components:
+  - type: Pda
+    id: ParamedicIDCard
+    state: wallet-rescuer
+  - type: Icon
+    state: wallet-rescuer

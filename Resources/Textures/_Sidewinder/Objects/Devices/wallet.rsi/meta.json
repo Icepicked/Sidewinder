@@ -44,13 +44,13 @@
       "name": "pda-captain"
     },
     {
-      "name": "wallet-shophand"
+      "name": "wallet-cargohauler"
     },
     {
       "name": "pda-ce"
     },
     {
-      "name": "pda-chaplain"
+      "name": "wallet-chaplin"
     },
     {
       "name": "wallet-chemist"
@@ -65,7 +65,7 @@
       "name": "pda-cmo"
     },
     {
-      "name": "pda-cook"
+      "name": "wallet-cook"
     },
     {
       "name": "pda-detective"
@@ -103,16 +103,16 @@
       ]
     },
     {
-      "name": "wallet-surgeon"
+      "name": "wallet-doctor"
     },
     {
-      "name": "pda-paramedic"
+      "name": "wallet-rescuer"
     },
     {
       "name": "pda-mime"
     },
     {
-      "name": "wallet-depthsminer"
+      "name": "wallet-shaftminer"
     },
     {
       "name": "pda-pirate"
@@ -188,13 +188,13 @@
       "name": "pda-musician"
     },
     {
-      "name": "pda-reporter"
+      "name": "wallet-reporter"
     },
     {
       "name": "pda-interncadet"
     },
     {
-      "name": "wallet-surgeonshand"
+      "name": "wallet-jrdoctor"
     },
     {
       "name": "pda-internsci"
@@ -227,7 +227,7 @@
       "name": "pda-seniorofficer"
     },
     {
-      "name": "wallet-mail"
+      "name": "wallet-courier"
     },
     {
       "name": "equipped-IDCARD",
