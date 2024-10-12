@@ -1,5 +1,121 @@
 - type: entity
   abstract: true
+  parent: [ BaseItem, StorePresetUplink ] #PDA's have uplinks so they have to inherit the data.
+  id: BaseAdminPDA
+  name: PDA
+  description: Personal Data Assistant.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Sidewinder/Objects/Devices/wallet.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Sidewinder/Objects/Devices/wallet.rsi
+    state: pda
+  - type: Pda
+    state: pda
+    paiSlot:
+      priority: -2
+      whitelist:
+        components:
+        - PAI
+    penSlot:
+      startingItem: Pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    idSlot:
+      name: access-id-card-component-default
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+        - IdCard
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      PDA-id: !type:ContainerSlot {}
+      PDA-pen: !type:ContainerSlot {}
+      PDA-pai: !type:ContainerSlot {}
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+  - type: ItemSlots
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+    - Belt
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    softness: 5
+    autoRot: true
+  - type: Ringer
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: PDA
+    prefix: device-address-prefix-console
+    savableAddress: false
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+    cartridgeSlot:
+      priority: -1
+      name: device-pda-slot-component-slot-name-cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - Cartridge
+  - type: ActivatableUI
+    key: enum.PdaUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.PdaUiKey.Key:
+        type: PdaBoundUserInterface
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+      enum.RingerUiKey.Key:
+        type: RingerBoundUserInterface
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzerBoundUserInterface
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: Input
+    context: "human"
+  - type: SentienceTarget # sentient PDA = pAI lite
+    flavorKind: station-event-random-sentience-flavor-mechanical
+    weight: 0.001 # 1,000 PDAs = as likely to be picked as 1 regular animal
+  - type: BlockMovement
+    blockInteraction: false # lets the PDA toggle its own flashlight
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
+
+- type: entity
+  abstract: true
   parent: [ BaseItem ] #PDA's have uplinks so they have to inherit the data.
   id: BaseWallet
   name: Wallet
@@ -255,3 +371,76 @@
     state: wallet-rescuer
   - type: Icon
     state: wallet-rescuer
+
+- type: entity
+  parent: BaseAdminPDA
+  id: WalletAdmin
+  name: admin wallet
+  suffix: Admin
+  description: If you are not an admin please return this wallet to the nearest admin.
+  components:
+  - type: Pda
+    id: UniversalIDCard
+    state: wallet-admin
+  - type: Icon
+    state: wallet-admin
+  - type: HealthAnalyzer
+    scanDelay: 0
+    silent: true
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    notificationsEnabled: false
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - LogProbeCartridge
+      - WantedListCartridge
+
+- type: entity
+  parent: BaseWallet
+  id: WalletJuniorDeputy
+  name: junior deputy wallet
+  description: A black leather wallet, has a badge clipped onto the front that reads "Junior Deputy".
+  components:
+  - type: Pda
+    id: SecurityCadetIDCard
+    state: wallet-jrdeputy
+  - type: Icon
+    state: wallet-jrdeputy
+
+- type: entity
+  parent: BaseWallet
+  id: WalletPrivateInvestigator
+  name: P. investigator wallet
+  description: A black leather wallet, has a magnifying glass stitched to the front. Smells like smoke.
+  components:
+  - type: Pda
+    id: DetectiveIDCard
+    state: wallet-privateinvestigator
+  - type: Icon
+    state: wallet-privateinvestigator
+
+- type: entity
+  parent: BaseWallet
+  id: WalletDeputy
+  name: deputy wallet
+  description: A black leather wallet, has a badge clipped onto the front that reads "Deputy".
+  components:
+  - type: Pda
+    id: SecurityIDCard
+    state: wallet-deputy
+  - type: Icon
+    state: wallet-deputy
+
+- type: entity
+  parent: BaseWallet
+  id: WalletJailer
+  name: jailer wallet
+  description: A black leather wallet, has a patch portraying cell bars on it. Smells like justice.
+  components:
+  - type: Pda
+    id: WardenIDCard
+    state: wallet-jailer
+  - type: Icon
+    state: wallet-jailer

@@ -68,7 +68,7 @@
       "name": "wallet-cook"
     },
     {
-      "name": "pda-detective"
+      "name": "wallet-privateinvestigator"
     },
     {
       "name": "pda-engineer"
@@ -118,6 +118,9 @@
       "name": "pda-pirate"
     },
     {
+      "name": "wallet-admin"
+    },
+    {
       "name": "pda-qm"
     },
     {
@@ -148,7 +151,7 @@
       "name": "pda-science"
     },
     {
-      "name": "pda-security"
+      "name": "wallet-deputy"
     },
     {
       "name": "pda-brigmedic",
@@ -182,7 +185,7 @@
       "name": "pda-virology"
     },
     {
-      "name": "pda-warden"
+      "name": "wallet-jailer"
     },
     {
       "name": "pda-musician"
@@ -191,7 +194,7 @@
       "name": "wallet-reporter"
     },
     {
-      "name": "pda-interncadet"
+      "name": "wallet-jrdeputy"
     },
     {
       "name": "wallet-jrdoctor"
