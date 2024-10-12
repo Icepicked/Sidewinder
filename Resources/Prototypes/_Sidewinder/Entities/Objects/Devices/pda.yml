@@ -1,0 +1,151 @@
+- type: entity
+  abstract: true
+  parent: [ BaseItem ] #PDA's have uplinks so they have to inherit the data.
+  id: BaseWallet
+  name: Wallet
+  description: Stores all your identification.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Sidewinder/Objects/Devices/wallet.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Sidewinder/Objects/Devices/wallet.rsi
+    state: wallet
+  - type: Pda
+    state: wallet
+    penSlot:
+      startingItem: Pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    idSlot:
+      name: access-id-card-component-default
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+        - IdCard
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      PDA-id: !type:ContainerSlot {}
+      PDA-pen: !type:ContainerSlot {}
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+  - type: ItemSlots
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+    - Belt
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: Input
+    context: "human"
+
+- type: entity
+  parent: BaseWallet
+  id: WalletCitizen
+  name: citizen wallet
+  description: A brown leather wallet, devoid of any patches or markings. Held by most citizens.
+  components:
+  - type: Pda
+    id: PassengerIDCard
+    state: wallet
+
+- type: entity
+  parent: BaseWallet
+  id: WalletBarkeep
+  name: barkeep wallet
+  description: A stained leather wallet, smells like beer.
+  components:
+  - type: Pda
+    id: BartenderIDCard
+    state: wallet-barkeep
+  - type: Icon
+    state: wallet-barkeep
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSurgeon
+  name: surgeon wallet
+  description: A once sterile white wallet, now stained with dried blood and dirt.
+  components:
+  - type: Pda
+    id: MedicalIDCard
+    state: wallet-surgeon
+  - type: Icon
+    state: wallet-surgeon
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSurgeonsHand
+  name: surgeon's hand wallet
+  description: A relatively clean wallet, only having small specs of dirt and dried blood.
+  components:
+  - type: Pda
+    id: MedicalInternIDCard
+    state: wallet-surgeonshand
+  - type: Icon
+    state: wallet-surgeonshand
+
+- type: entity
+  parent: BaseWallet
+  id: WalletPharmacist
+  name: pharmacist wallet
+  description: A white leather wallet, a patch portraying three vials is stitched onto the front of it.
+  components:
+  - type: Pda
+    id: ChemistIDCard
+    state: wallet-pharmacist
+  - type: Icon
+    state: wallet-pharmacist
+
+- type: entity
+  parent: BaseWallet
+  id: WalletShophand
+  name: shophand wallet
+  description: A beige wallet. A patch resembling a envelope is stiched onto the face of it.
+  components:
+  - type: Pda
+    id: CargoIDCard
+    state: wallet-shophand
+  - type: Icon
+    state: wallet-shophand
+
+- type: entity
+  parent: BaseWallet
+  id: WalletDepthsMiner
+  name: depth miner's wallet
+  description: A beige wallet. Covered in dirt and iron residue.
+  components:
+  - type: Pda
+    id: SalvageIDCard
+    state: wallet-depthsminer
+  - type: Icon
+    state: wallet-depthsminer
+
+- type: entity
+  parent: BaseWallet
+  id: WalletMailDeliverer 
+  name: mail deliverer's wallet
+  description: A beige wallet. A patch resembling a envelope is stiched onto the face of it.
+  components:
+  - type: Pda
+    id: CargoIDCard #TODO: Change ID fron CargoIDCard to MailIDCard (make it) 
+    state: wallet-mail
+  - type: Icon
+    state: wallet-mail
