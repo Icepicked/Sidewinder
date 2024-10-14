@@ -258,7 +258,7 @@
   parent: BaseWallet
   id: WalletCourier
   name: courier wallet
-  description: A beige wallet. A patch resembling a envelope is stiched onto the face of it.
+  description: A beige wallet. A patch resembling a envelope is stitched onto the face of it.
   components:
   - type: Pda
     id: CargoIDCard #TODO: Change ID fron CargoIDCard to MailIDCard (make it) 
@@ -322,7 +322,7 @@
   parent: BaseWallet
   id: WalletCook
   name: cook wallet
-  description: A brown wallet, covered in dried animal blood. A path with a cleaver on it is stiched to the front.
+  description: A brown wallet, covered in dried animal blood. A path with a cleaver on it is stitched to the front.
   components:
   - type: Pda
     id: ChefIDCard
@@ -346,7 +346,7 @@
   parent: BaseWallet
   id: WalletReporter
   name: reporter wallet
-  description: A brown wallet, a patch with a quill on it is stiched to the front. Smells like old ink.
+  description: A brown wallet, a patch with a quill on it is stitched to the front. Smells like old ink.
   components:
   - type: Pda
     id: ReporterIDCard
@@ -444,3 +444,177 @@
     state: wallet-jailer
   - type: Icon
     state: wallet-jailer
+
+- type: entity
+  parent: BaseWallet
+  id: WalletEngineer
+  name: engineer wallet
+  description: A orange-ish wallet, smells like oil and grease. A Wrench is stitched onto the front.
+  components:
+  - type: Pda
+    id: EngineeringIDCard
+    state: wallet-engineer
+  - type: Icon
+    state: wallet-engineer
+
+- type: entity
+  parent: BaseWallet
+  id: WalletJrEngineer
+  name: junior engineer wallet
+  description: A orange-ish wallet, small splotches of oil are stained onto the front.
+  components:
+  - type: Pda
+    id: TechnicalAssistantIDCard
+    state: wallet-juniorengineer
+  - type: Icon
+    state: wallet-juniorengineer
+
+- type: entity
+  parent: BaseWallet
+  id: WalletCraftsman
+  name: craftsman wallet
+  description: A orange-ish wallet, a patch protraying three nails is stitched to the front of it.
+  components:
+  - type: Pda
+    id: TechnicalAssistantIDCard #TODO: Make a Crafstman ID/Key
+    state: wallet-craftsman
+  - type: Icon
+    state: wallet-craftsman
+
+- type: entity
+  parent: BaseWallet
+  id: WalletJrResearcher
+  name: junior researcher wallet
+  description: a wallet with purple trim, a patch with a lightbulb is stitched onto the front.
+  components:
+  - type: Pda
+    id: ResearchAssistantIDCard
+    state: wallet-juniorresearcher
+  - type: Icon
+    state: wallet-juniorresearcher
+
+- type: entity
+  parent: BaseWallet
+  id: WalletResearcher
+  name: researcher wallet
+  description: a white wallet with purple trim, smells like science.
+  components:
+  - type: Pda
+    id: ResearchIDCard
+    state: wallet-researcher
+  - type: Icon
+    state: wallet-researcher
+
+- type: entity
+  parent: BaseWallet
+  id: WalletMayor
+  name: mayor wallet
+  description: A mahogany wallet with gold trim, pristine.
+  components:
+  - type: Pda
+    id: CaptainIDCard
+    state: wallet-mayor
+    penSlot:
+      startingItem: PenCap
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Icon
+    state: wallet-mayor
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSecretary
+  name: secretary wallet
+  description: A black leather wallet with gold trim. A piece of paper is stitched into the front of it with gold.
+  components:
+  - type: Pda
+    id: CaptainIDCard
+    state: wallet-secretary
+    penSlot:
+      startingItem: PenCap
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Icon
+    state: wallet-secretary
+
+- type: entity
+  parent: BaseWallet
+  id: WalletGovernment
+  name: government wallet
+  description: A black leather wallet with gold trim. nothing is stitched to the front, they mean business.
+  components:
+  - type: Pda
+    id: CentcomIDCard
+    state: wallet-cc
+    penSlot:
+      startingItem: PenCentcom
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Icon
+    state: wallet-cc
+
+- type: entity
+  parent: BaseWallet
+  id: WalletChiefEngineer
+  name: chief engineer wallet
+  description: A mahogany wallet with gold trim, a patch portraying a nut is stitched to the front in gold.
+  components:
+  - type: Pda
+    id: CEIDCard
+    state: wallet-chief-engineer
+  - type: Icon
+    state: wallet-chief-engineer
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSurgeonGeneral
+  name: surgeon general wallet
+  description: A mahogany wallet with gold trim, a patch portraying a surture and needle is stitched to the front in gold.
+  components:
+  - type: Pda
+    id: CMOIDCard
+    state: wallet-surgeon-general
+  - type: Icon
+    state: wallet-surgeon-general
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSheriff
+  name: sheriff wallet
+  description: A mahogany wallet with gold trim, smells like abuse of authority.
+  components:
+  - type: Pda
+    id: HoSIDCard
+    state: wallet-sheriff
+  - type: Icon
+    state: wallet-sheriff
+
+- type: entity
+  name: postmaster general wallet
+  parent: BaseWallet
+  id: WalletPostmasterGeneral
+  description: A mahogany wallet with gold trim, a patch portraying a envelope is stitched to the front in gold.
+  components:
+  - type: Pda
+    id: QuartermasterIDCard
+    state: wallet-postmaster-general
+  - type: Icon
+    state: wallet-postmaster-general
+
+- type: entity
+  parent: BaseWallet
+  id: WalletResearchDirector
+  name: research director wallet
+  description: A mahogany wallet with gold trim, it feels like progress.
+  components:
+  - type: Pda
+    id: RDIDCard
+    state: wallet-research-director
+  - type: Icon
+    state: wallet-research-director

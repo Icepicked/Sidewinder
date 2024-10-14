@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Icepicked (Github, Discord)",
+  "license": "",
+  "copyright": "Wallet sprites made by icepicked (Github, Discord)",
   "size": {
     "x": 32,
     "y": 32
@@ -41,7 +41,28 @@
       "name": "pda-boxer"
     },
     {
-      "name": "pda-captain"
+      "name": "wallet-mayor"
+    },
+    {
+      "name": "wallet-secretary"
+    },
+    {
+      "name": "wallet-cc"
+    },
+    {
+      "name": "wallet-chief-engineer"
+    },
+    {
+      "name": "wallet-surgeon-general"
+    },
+    {
+      "name": "wallet-sheriff"
+    },
+    {
+      "name": "wallet-postmaster-general"
+    },
+    {
+      "name": "wallet-research-director"
     },
     {
       "name": "wallet-cargohauler"
@@ -71,7 +92,7 @@
       "name": "wallet-privateinvestigator"
     },
     {
-      "name": "pda-engineer"
+      "name": "wallet-engineer"
     },
     {
       "name": "pda-genetics"
@@ -148,7 +169,7 @@
       "name": "pda-roboticist"
     },
     {
-      "name": "pda-science"
+      "name": "wallet-researcher"
     },
     {
       "name": "wallet-deputy"
@@ -200,13 +221,13 @@
       "name": "wallet-jrdoctor"
     },
     {
-      "name": "pda-internsci"
+      "name": "wallet-juniorresearcher"
     },
     {
       "name": "pda-internservice"
     },
     {
-      "name": "pda-interntech"
+      "name": "wallet-juniorengineer"
     },
     {
       "name": "pda-zookeeper"
@@ -231,6 +252,9 @@
     },
     {
       "name": "wallet-courier"
+    },
+    {
+      "name": "wallet-craftsman"
     },
     {
       "name": "equipped-IDCARD",
