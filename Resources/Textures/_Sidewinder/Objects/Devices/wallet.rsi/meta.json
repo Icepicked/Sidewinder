@@ -32,13 +32,7 @@
       "name": "wallet"
     },
     {
-      "name": "pda-atmos"
-    },
-    {
       "name": "wallet-barkeep"
-    },
-    {
-      "name": "pda-boxer"
     },
     {
       "name": "wallet-mayor"
@@ -68,22 +62,13 @@
       "name": "wallet-cargohauler"
     },
     {
-      "name": "pda-ce"
-    },
-    {
       "name": "wallet-chaplin"
     },
     {
       "name": "wallet-chemist"
     },
     {
-      "name": "pda-clear"
-    },
-    {
       "name": "wallet-clown"
-    },
-    {
-      "name": "pda-cmo"
     },
     {
       "name": "wallet-cook"
@@ -95,33 +80,7 @@
       "name": "wallet-engineer"
     },
     {
-      "name": "pda-genetics"
-    },
-    {
-      "name": "pda-hop"
-    },
-    {
-      "name": "pda-hos"
-    },
-    {
       "name": "wallet-farmer"
-    },
-    {
-      "name": "pda-janitor"
-    },
-    {
-      "name": "pda-lawyer"
-    },
-    {
-      "name": "pda-library",
-      "delays": [
-        [
-          0.3,
-          0.3,
-          0.3,
-          0.3
-        ]
-      ]
     },
     {
       "name": "wallet-doctor"
@@ -130,43 +89,10 @@
       "name": "wallet-rescuer"
     },
     {
-      "name": "pda-mime"
-    },
-    {
       "name": "wallet-shaftminer"
     },
     {
-      "name": "pda-pirate"
-    },
-    {
       "name": "wallet-admin"
-    },
-    {
-      "name": "pda-qm"
-    },
-    {
-      "name": "pda-r",
-      "delays": [
-        [
-          0.8,
-          0.8
-        ]
-      ]
-    },
-    {
-      "name": "pda-r-library",
-      "delays": [
-        [
-          0.8,
-          0.8
-        ]
-      ]
-    },
-    {
-      "name": "pda-rd"
-    },
-    {
-      "name": "pda-roboticist"
     },
     {
       "name": "wallet-researcher"
@@ -175,41 +101,7 @@
       "name": "wallet-deputy"
     },
     {
-      "name": "pda-brigmedic",
-      "delays": [
-        [
-          0.3,
-          0.3,
-          0.3,
-          0.3
-        ]
-      ]
-    },
-    {
-      "name": "pda-syndi"
-    },
-    {
-      "name": "pda-syndi-agent"
-    },
-    {
-      "name": "pda-centcom",
-      "delays": [
-        [
-          1.2,
-          1.2,
-          1.2,
-          1.2
-        ]
-      ]
-    },
-    {
-      "name": "pda-virology"
-    },
-    {
       "name": "wallet-jailer"
-    },
-    {
-      "name": "pda-musician"
     },
     {
       "name": "wallet-reporter"
@@ -224,31 +116,7 @@
       "name": "wallet-juniorresearcher"
     },
     {
-      "name": "pda-internservice"
-    },
-    {
       "name": "wallet-juniorengineer"
-    },
-    {
-      "name": "pda-zookeeper"
-    },
-    {
-      "name": "pda-ert"
-    },
-    {
-      "name": "pda-cluwne"
-    },
-    {
-      "name": "pda-seniorengineer"
-    },
-    {
-      "name": "pda-seniorresearcher"
-    },
-    {
-      "name": "pda-seniorphysician"
-    },
-    {
-      "name": "pda-seniorofficer"
     },
     {
       "name": "wallet-courier"
