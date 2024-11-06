@@ -5,7 +5,6 @@
   - type: Construction
     graph: N14Bonfire
     node: bonfire
-  - type: BonfireHeater
   - type: ItemPlacer
     maxEntities: 4 # big grill, many steaks
     whitelist:
@@ -29,5 +28,3 @@
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 0.1
-  - type: Lava
-    fireStacks: 0.45

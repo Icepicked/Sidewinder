@@ -155,7 +155,7 @@
       storagebase: !type:Container
       
 - type: entity
-  parent: [ N14ShelfWood1, N14StorageFillDomestic ]
+  parent: [ N14ShelfWood1 ]
   id: N14LootShelfWood1
   suffix: Loot, RandomDomestic
 

@@ -72,7 +72,6 @@
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi
-  - type: InteractionVerbs
     allowedVerbs:
     - KnockOn
       

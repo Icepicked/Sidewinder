@@ -1,3 +1,22 @@
+#Sidewinder - moved from /_Nuclear14/Entities/Structures/Machines/computers.yml to monitors_televisions.yml
+- type: entity
+  id: N14BaseComputer
+  parent: BaseComputer
+  name: computer
+  description: An old heavy computer.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Machines/computer.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: keyboard
+    - map: ["computerLayerScreen"]
+      state: screens
+    - map: ["computerLayerKeys"]
+      state: keys
+
 - type: entity
   parent: N14BaseComputer
   id: N14ComputerVDU

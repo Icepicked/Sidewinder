@@ -103,19 +103,6 @@
 
 - type: entity
   parent: N14DoorMakeshift
-  id: N14DoorWoodHouseWhite
-  name: wooden door
-  description: It's a door. Looks like a front door to a home.
-  components:
-  - type: Sprite
-    netsync: false
-    sprite: _Nuclear14/Structures/Doors/FalloutDoors/housedoor.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
-
-- type: entity
-  parent: N14DoorMakeshift
   id: N14DoorWoodHousePainted
   name: wooden door
   suffix: painted
@@ -133,19 +120,6 @@
     available:
       - enum.DamageStateVisualLayers.Base:
           paint: Rainbow
-
-- type: entity
-  parent: N14DoorMakeshift
-  id: N14DoorWoodHouseWhiteClean
-  name: wooden door
-  description: The cleanest door known to what remains of mankind.
-  components:
-  - type: Sprite
-    netsync: false
-    sprite: _Nuclear14/Structures/Doors/FalloutDoors/housecleandoor.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
   parent: N14DoorMakeshift
@@ -221,20 +195,6 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
 
-- type: entity
-  parent: N14DoorWoodSecure
-  id: N14DoorWoodSecureNCR
-  name: secure door
-  suffix: NCR
-  description: A secure door made from wood and bearing an NCR emblem.
-  components:
-  - type: Sprite
-    netsync: false
-    sprite: _Nuclear14/Structures/Doors/FalloutDoors/securedoor_ncr.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
-
 # Metal Doors
 - type: entity
   parent: N14BaseDoor
@@ -291,18 +251,6 @@
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Doors/FalloutDoors/barreddoor.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
-
-- type: entity
-  parent: N14DoorMetalReinforced
-  id: N14DoorMetalIron
-  name: iron door
-  description: A door made of iron, secured with another block of iron.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Doors/FalloutDoors/irondoor.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]

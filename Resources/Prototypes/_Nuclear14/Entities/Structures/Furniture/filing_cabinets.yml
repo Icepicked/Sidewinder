@@ -41,11 +41,11 @@
       storagebase: !type:Container
 
 - type: entity
-  parent: [ N14filingCabinet, N14BaseSmallLockerTimedStorageFill ]
+  parent: [ N14filingCabinet ]
   id: N14FilingCabinetRefilling
   suffix: Refilling,Random
 
 - type: entity
-  parent: [ N14filingCabinet, N14BaseSmallLockerStorageFill ]
+  parent: [ N14filingCabinet ]
   id: N14LootFilingCabinet
   suffix: Loot,Random

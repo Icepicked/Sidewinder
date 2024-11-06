@@ -50,7 +50,6 @@
   components:
   - type: Sprite
     state: bars
-  - type: InteractionVerbs
     allowedVerbs:
     - Rattle
     

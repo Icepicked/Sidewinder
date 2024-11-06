@@ -132,6 +132,5 @@
   components:
   - type: Sprite
     state: timber
-  - type: PottedPlantHide
   - type: SecretStash
     secretPartName: secret-stash-part-plant
