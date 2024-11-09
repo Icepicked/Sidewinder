@@ -58,7 +58,7 @@
             max: 1
   - type: SoundOnGather
   - type: Gatherable
-    whitelist:
+    toolWhitelist:
       tags:
         - Axe
         - BotanyHatchet
@@ -87,9 +87,8 @@
   - type: Sprite
     state: tree_timber
   - type: Gatherable
-    whitelist:
-      tags:
-        - Saw
+    components:
+      - Saw
   - type: OreVein
     oreChance: 1.0
     currentOre: WoodPlank

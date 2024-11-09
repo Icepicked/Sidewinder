@@ -251,7 +251,7 @@
     base: tallrock
   - type: SoundOnGather
   - type: Gatherable
-    whitelist:
+    toolWhitelist:
       tags:
         - Pickaxe
   - type: Damageable
@@ -335,49 +335,7 @@
   - type: IconSmooth
     key: walls
     base: tallrustmetal
-    
-- type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallReinfMetalRustTall
-  name: reinforced metal rust wall
-  suffix: tall
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/rustreinfmetal.rsi
-  - type: Icon
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/rustreinfmetal.rsi
-  - type: IconSmooth
-    key: walls
-    base: tallrustreinfmetal
-    
-- type: entity
-  parent: N14BaseWallTallMetalStrong
-  id: N14WallVaultRustTall
-  name: vault rust wall
-  suffix: tall
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/rustvault.rsi
-  - type: Icon
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/rustvault.rsi
-  - type: IconSmooth
-    key: walls
-    base: tallrustvault
-    
-- type: entity
-  parent: N14BaseWallTallMetal
-  id: N14WallVaultVentsRustTall
-  name: vault vents rust wall
-  suffix: tall
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/rustvaultvent.rsi
-  - type: Icon
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/rustvaultvent.rsi
-  - type: IconSmooth
-    key: walls
-    base: tallrustvaultvent
-    
+
 - type: entity
   parent: N14BaseWallTallMetalWeak
   id: N14WallScrapTall
