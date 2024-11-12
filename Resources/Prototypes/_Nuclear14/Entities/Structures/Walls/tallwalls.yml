@@ -51,20 +51,6 @@
 
 - type: entity
   parent: N14BaseWallTall
-  id: N14WallAdobeTall
-  name: adobe wall
-  suffix: tall
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/adobe.rsi
-  - type: Icon
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/adobe.rsi
-  - type: IconSmooth
-    key: walls
-    base: talladobe
-
-- type: entity
-  parent: N14BaseWallTall
   id: N14WallBrickTall
   name: brick wall
   suffix: tall
@@ -138,20 +124,6 @@
     key: walls
     base: tallconcretealt
 
-- type: entity
-  parent: N14BaseWallTall
-  id: N14WallDungeonAltTall
-  name: dungeon wall
-  suffix: tall
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/dungeonalt.rsi
-  - type: Icon
-    sprite: _Nuclear14/Structures/Walls/ms13/tall/dungeonalt.rsi
-  - type: IconSmooth
-    key: walls
-    base: talldungeonalt
-    
 - type: entity
   parent: N14BaseWallTallMetal
   id: N14WallMetalTall

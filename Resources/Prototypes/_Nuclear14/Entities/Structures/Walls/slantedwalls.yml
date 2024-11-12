@@ -226,25 +226,6 @@
 
 - type: entity
   parent: BaseWallIndestructible
-  id: N14WallDungeonAltSlantedIndestructible
-  name: dungeon wall
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Walls/ms13/slanted/dungeonalt.rsi
-  - type: Icon
-    sprite: _Nuclear14/Structures/Walls/ms13/slanted/dungeonalt.rsi
-  - type: IconSmooth
-    key: walls
-    base: slanteddungeonalt
-    
-- type: entity
-  parent: [ N14WallDungeonAltSlantedIndestructible, N14BaseWallSlanted ]
-  id: N14WallDungeonAltSlanted
-  name: dungeon wall
-  suffix: slanted
-    
-- type: entity
-  parent: BaseWallIndestructible
   id: N14WallMetalSlantedIndestructible
   name: metal wall
   components:
