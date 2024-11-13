@@ -77,35 +77,35 @@
 - type: entity
   parent: N14WellWaterClean
   id: N14WellWaterDirty
-  suffix: Dirty
+  suffix: [ Dirty, NOT ADDED ]
   components:
   - type: SolutionContainerManager
     solutions:
       well:
         reagents:
-        - ReagentId: WaterDirty
+        - ReagentId: Water
           Quantity: 500
   - type: SolutionRegeneration
     solution: well
     generated:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: Water
         Quantity: 1
 
 - type: entity
   parent: N14WellWaterClean
   id: N14WellWaterIrradiated # N14TODO: As above
-  suffix: Irradiated
+  suffix: [ Irradiated, NOT ADDED ]
   components:
   - type: SolutionContainerManager
     solutions:
       well:
         reagents:
-        - ReagentId: WaterIrradiated
+        - ReagentId: Water
           Quantity: 500
   - type: SolutionRegeneration
     solution: well
     generated:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: Water
         Quantity: 1

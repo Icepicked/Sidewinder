@@ -65,7 +65,6 @@
   id: N14WindowSlantedBroken
   name: broken glass
   description: Broken remains of a window.
-  noSpawn: true
   placement:
     mode: SnapgridCenter
   components:
