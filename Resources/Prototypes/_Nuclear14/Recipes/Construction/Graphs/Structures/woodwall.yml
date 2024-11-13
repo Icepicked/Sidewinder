@@ -20,7 +20,7 @@
           conditions:
             - !type:EntityAnchored {}
           steps:
-            - material: N14Timber
+            - material: WoodPlank
               amount: 2
               doAfter: 2
 
