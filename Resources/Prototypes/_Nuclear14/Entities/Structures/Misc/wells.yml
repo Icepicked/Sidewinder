@@ -79,7 +79,7 @@
 - type: entity
   parent: N14WellWaterClean
   id: N14WellWaterDirty
-  suffix: [ Dirty, NOT ADDED ]
+  suffix: Dirty
   components:
   - type: SolutionContainerManager
     solutions:
@@ -99,7 +99,7 @@
 - type: entity
   parent: N14WellWaterClean
   id: N14WellWaterIrradiated # N14TODO: As above
-  suffix: [ Irradiated, NOT ADDED ]
+  suffix: Irradiated
   components:
   - type: SolutionContainerManager
     solutions:
