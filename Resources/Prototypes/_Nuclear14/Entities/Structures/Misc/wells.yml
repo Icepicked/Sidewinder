@@ -60,6 +60,8 @@
         - LowImpassable
   - type: SolutionContainerManager
     solutions:
+      drainBuffer:
+        maxVol: 100
       tank:
         reagents:
         - ReagentId: Water
@@ -81,6 +83,8 @@
   components:
   - type: SolutionContainerManager
     solutions:
+      drainBuffer:
+        maxVol: 100
       tank:
         reagents:
         - ReagentId: Water
@@ -99,6 +103,8 @@
   components:
   - type: SolutionContainerManager
     solutions:
+      drainBuffer:
+        maxVol: 100
       tank:
         reagents:
         - ReagentId: Water
