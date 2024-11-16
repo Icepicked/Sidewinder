@@ -17,26 +17,6 @@
   conditions:
     - !type:TileNotBlocked
 
-## Windows
-- type: construction
-  name: window pane
-  id: N14Window
-  graph: N14WindowPane
-  startNode: start
-  targetNode: Window
-  category: construction-category-structures
-  description: A window pane for seeing through things.
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-  hide: false
-  canRotate: false
-  icon:
-    sprite: _Nuclear14/Structures/Windows/slanted/slantedwindow.rsi
-    state: full
-  conditions:
-  - !type:TileNotBlocked
-
 # # Doors
 - type: construction
   name: wooden door
