@@ -57,7 +57,7 @@
           completed:
             - !type:GivePrototype
               prototype: MaterialWoodPlank1
-              amount: 2
+              amount: 1
           steps:
             - tool: Prying
               doAfter: 10
