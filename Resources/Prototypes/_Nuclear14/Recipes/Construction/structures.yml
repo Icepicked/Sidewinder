@@ -35,7 +35,7 @@
     sprite: _Nuclear14/Structures/Windows/slanted/slantedwindow.rsi
     state: full
   conditions:
-    - !type:TileNotBlocked
+  - !type:TileNotBlocked
 
 # # Doors
 - type: construction
