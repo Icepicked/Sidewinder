@@ -15,14 +15,14 @@
         amount: 2
         doAfter: 2
 
-    - node: Window
-      entity: N14WindowSlanted
-      edges:
-        - to: start
-          completed:
-            - !type:GivePrototype
-              prototype: SheetGlass1
-              amount: 2
-          steps:
-            - tool: Prying
-              doAfter: 10
+  - node: Window
+    entity: N14WindowSlanted
+    edges:
+    - to: start
+      completed:
+      - !type:GivePrototype
+        prototype: SheetGlass1
+        amount: 2
+      steps:
+      - tool: Prying
+        doAfter: 10
