@@ -89,7 +89,7 @@
                   min: 0
                   max: 2
     - type: Strap
-      enabled: False
+      enabled: True
       position: Down
       rotation: -90
       buckleOffset: "0.05,-0.10"
