@@ -53,6 +53,8 @@
   components:
   - type: Damageable
     damageModifierSet: Metallic
+  - type: Physics
+    canCollide: False
   - type: Destructible
     thresholds:
     - trigger:

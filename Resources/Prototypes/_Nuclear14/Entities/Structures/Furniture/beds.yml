@@ -66,6 +66,8 @@
         map: ["buckledLayer"]
         visible: false
     - type: Appearance
+    - Type: Strap
+      enabled: False
     - type: Fixtures
       fixtures:
         fix1:
