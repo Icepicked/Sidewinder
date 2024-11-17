@@ -128,7 +128,7 @@
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.6
     sprintSpeedModifier: 0.6
-    
+
 - type: entity
   parent: N14FloorWaterSewerDeep
   id: N14FloorWaterSaltDeep
@@ -146,7 +146,7 @@
       pool:
         maxVol: 9999999 #.inf seems to break the whole yaml file, but would definitely be preferable.
         reagents:
-        - ReagentId: WaterSalt
+        - ReagentId: Water #TODO: Add WaterSalt Reagent.
           Quantity: 9999999
 
 - type: entity
