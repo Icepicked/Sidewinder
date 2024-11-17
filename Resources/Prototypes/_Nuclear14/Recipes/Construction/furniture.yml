@@ -16,7 +16,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-    
+
 - type: construction
   id: N14BedWood
   name: bed
@@ -52,7 +52,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-    
+
 - type: construction
   id: N14Bedroll
   name: bedroll
@@ -64,24 +64,6 @@
   icon:
     sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
     state: bedroll_unrolled
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-  hide: false
-    
-- type: construction
-  id: N14BedMattress
-  name: mattress
-  description: A basic cloth mattress for bedding down.
-  graph: N14Bed
-  startNode: start
-  targetNode: mattress
-  category: construction-category-furniture
-  icon:
-    sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
-    state: mattress1
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -106,7 +88,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-    
+
 - type: construction
   name: wooden chair
   id: N14ChairWood1
@@ -124,7 +106,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-    
+
 - type: construction
   name: padded chair
   id: N14ChairWoodPadded
@@ -142,7 +124,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-    
+
 - type: construction
   name: settler chair
   id: N14ChairWoodSettler
@@ -160,7 +142,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-    
+
 - type: construction
   name: black stool
   id: N14ChairStoolBarBlack
@@ -178,7 +160,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: tan stool
   id: N14ChairStoolBarTan
@@ -196,7 +178,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: red stool
   id: N14ChairStoolBarRed
@@ -214,7 +196,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: armchair
   id: N14ChairArmchair
@@ -232,7 +214,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: green metal chair
   id: N14ChairMetalGreen
@@ -250,7 +232,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: blue metal chair
   id: N14ChairMetalBlue
@@ -268,7 +250,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: red metal chair
   id: N14ChairMetalRed
@@ -286,7 +268,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: red office chair
   id: N14ChairOfficeRed
@@ -304,7 +286,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: blue office chair
   id: N14ChairOfficeBlue
@@ -322,7 +304,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: green office chair
   id: N14ChairOfficeGreen
@@ -340,7 +322,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: ergonomic office chair
   id: N14ChairOfficeErgonomic
@@ -358,7 +340,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: folding chair
   id: N14ChairMetalFolding
@@ -376,7 +358,7 @@
   conditions:
     - !type:TileNotBlocked
   hide: false
-  
+
 - type: construction
   name: plastic chair
   id: N14ChairPlastic
@@ -415,7 +397,7 @@
     state: full
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   name: metal table
   id: N14TableMetalGrate
