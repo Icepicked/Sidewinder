@@ -33,7 +33,7 @@
   components:
   - type: Sprite
     state: cabinet_tv
-    
+
 - type: entity
   parent: N14Television
   id: N14TelevisionRadking
@@ -125,9 +125,7 @@
     volume: -8
     range: 8
     sound:
-      path: /Audio/Ambience/Objects/drain.ogg  
-  - type: SecretStash
-    secretPartName: secret-stash-part-toilet
+      path: /Audio/Ambience/Objects/drain.ogg
   - type: ContainerContainer
     containers:
       stash: !type:ContainerSlot {}
@@ -169,7 +167,7 @@
     solutions:
       toilet:
         reagents:
-        - ReagentId: WaterDirty
+        - ReagentId: Water
           Quantity: 180
         - ReagentId: GastroToxin
           Quantity: 20
@@ -177,7 +175,7 @@
     solution: toilet
     generated:
       reagents:
-      - ReagentId: WaterDirty
+      - ReagentId: Water
         Quantity: 3
       - ReagentId: GastroToxin
         Quantity: 1
@@ -191,7 +189,7 @@
     solutions:
       toilet:
         reagents:
-        - ReagentId: WaterIrradiated
+        - ReagentId: Water
           Quantity: 180
         - ReagentId: GastroToxin
           Quantity: 20
@@ -199,7 +197,7 @@
     solution: toilet
     generated:
       reagents:
-      - ReagentId: WaterIrradiated
+      - ReagentId: Water
         Quantity: 3
       - ReagentId: GastroToxin
         Quantity: 1
