@@ -262,7 +262,7 @@
   description: A beige wallet. A patch resembling a envelope is stitched onto the face of it.
   components:
   - type: Pda
-    id: CargoIDCard #TODO: Change ID fron CargoIDCard to MailIDCard (make it) 
+    id: CargoIDCard #TODO: Change ID fron CargoIDCard to MailIDCard (make it)
     state: wallet-courier
   - type: Icon
     state: wallet-courier
@@ -619,3 +619,27 @@
     state: wallet-research-director
   - type: Icon
     state: wallet-research-director
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSweeper
+  name: weeper wallet
+  description: A brown wallet, covered in dust and dirt.
+  components:
+  - type: Pda
+    id: JanitorIDCard
+    state: wallet-sweeper
+  - type: Icon
+    state: wallet-sweeper
+
+- type: entity
+  parent: BaseWallet
+  id: WalletSwitchboard
+  name: switchboard operator wallet
+  description: A beige wallet, a patch portraying a switchboard cord is stitched to the front.
+  components:
+  - type: Pda
+    id: CargoIDCard
+    state: wallet-switchboard
+  - type: Icon
+    state: wallet-switchboard

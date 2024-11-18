@@ -125,6 +125,12 @@
       "name": "wallet-craftsman"
     },
     {
+      "name": "wallet-sweeper"
+    },
+    {
+      "name": "wallet-switchboard"
+    },
+    {
       "name": "equipped-IDCARD",
       "directions": 4
     }
